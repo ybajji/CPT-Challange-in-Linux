@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linux Learning</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Linux Einführung</h1>
+      <div class="nav">        
+        <a href="/login">LOGIN</a>
+      </div>
+    </header>
+
+   
+      <div id="desk">
+        <iframe class="desktop" id="webtop-iframe" src="http://localhost:8807"></iframe>
+      </div>
+    
+      <div   class="par show" id="par1" >
+        <h3>Welcome</h3>
+        <p class="def">
+          Welcome to the Linux Introduction Course for Ethical Hackers and IT-Security.<br><br><br>
+          Throughout this course, we will provide you with comprehensive instruction on the fundamentals of Linux and essential commands.<br><br>
+          The course structure involves an interactive Linux operating system on the right-hand side, allowing you to explore and experiment freely. On the left side, you will find valuable information regarding the system, commands, and tasks.<br><br>
+          Please pay attention to the bold text when entering commands or folder names in the command line. Disregard any text that is not highlighted in bold.<br><br>
+          Feel free to navigate through the system using the provided back and forward buttons.
+        </p>
+        <div id="join_session_div">
+          <form style="display: grid" id="join-session-form">
+            <input
+              type="text"
+              id="port-input"
+              placeholder="Enter port number here"
+            />
+            <button id="join_button" type="submit">
+              Join an Existing Session
+            </button>
+          </form>
+        </div>
+        
+      </div>
+      <div class="par hidden" >
+      <h3>What is Linux ?</h3>
+      <p class="def">
+        
+        Linux is an operating system, similar to Windows and macOS, although it may not enjoy the same level of widespread recognition.<br><br><br>
+        As you can observe on the right-hand side, Linux shares significant similarities with its counterparts, offering features such as an internet browser, directory system, and command line interface, which will become increasingly significant as you progress.<br><br><br>
+        Now, you may be wondering why one would opt for Linux instead of the more prominent Windows and macOS platforms. The answer to this question awaits you on the following page.
+      </p>
+      
+      
+    </div>
+    <div class="par hidden">
+      <h3>Why Linux?</h3>
+      <p class="def">
+        
+         This is best explained by the following chain of information <br><br><br>
+         <ul>
+            <li>Linux, being an open-source operating system, lacks unnecessary programs or applications like Microsoft Edge Browser.</li><br>
+            <li>Its inherent nature renders it faster and more secure in comparison to Windows and macOS. </li><br>
+            <li>Consequently, a significant majority of websites and servers utilize Linux as their operating system, accounting for approximately 66% of the entire Internet.</li><br>
+          </ul>
+          By now, you should have gained an understanding of the rationale behind the need for Linux. If any doubts persist, please proceed by clicking the Next button.
+
+      </p>
+      
+      
+    </div>
+    <div class="par hidden">
+      <h3> Why Linux </h3>
+      <p class="def">
+        It's essential to know your enemy inside out. Since most websites and servers are powered by Linux, they become prime targets for not-so-ethical hackers who also rely on Linux!<br><br>
+        To protect ourselves and uncover vulnerabilities, we must familiarize ourselves with Linux and learn how to wield its power effectively!<br><br><br>
+        Now that we understand the purpose behind our journey, let's dive into the introduction.
+      </p>
+           
+    </div>
+    <div class="par hidden">
+      <h3> Linux structure </h3>
+      <p class="def">
+         Linux consists of distinct components that contribute to its functionality. Vertically organized, the structure includes:<br><br>
+         <ul>
+             <li> User: Interacts with the system.</li><br>
+             <li>Linux Shell: Acts as the user interface (on the right)</li><br>
+             <li>Linux Kernel: Serves as the core, managing resources and hardware interaction.</li><br>
+             <li>Computer Hardware: Physical components facilitating system operation.</li><br>
+         </ul><br><br>
+          The shell and kernel together are commonly referred to as Linux for ease of understanding, despite Linux technically representing the kernel itself.
+      </p>
+         
+    </div>
+    <div class="par hidden">
+      <h3>Command line</h3>
+      <p class="def">
+        Linux today looks like other operating systems. Most computers are operated via a graphical user interface (GUI). With Linux, however, the use of the command line dominates.​<br><br>
+
+        Why is this so? <br>
+        "GUI makes simple tasks easier, while the command line makes difficult tasks possible." <br><br>
+        The command line offers the possibility to operate Linux completely via the keyboard. This makes a mouse obsolete.<br><br>
+        You will find the command line icon in second place in the lower middle bar. You can click on the symbol. <br><br>
+        Or you can simply call it up with <b>Ctrl + Alt + t </b> <br><br>
+        When you have finished, click on next!
+      </p>
+            
+    </div>
+    <div class="par hidden">
+      <h3> </h3>
+      <p>
+      So, let's take a look at the command line.<br><br>
+      Type in what you want and hit enter.<br><br>
+      As you can see, it doesn't work.<br><br>
+      Why is that?<br><br>
+      Linux has fixed commands. These must be entered with upper/lower case-sensitivity.<br><br>
+      Let's try again on the next page.
+      </p>
+     
+    </div>
+    <div class="par hidden">
+      <h3>Echo</h3>
+      <p class="def">
+       The echo command is used to print out a string onto the terminal.<br>
+       Try typing <b>echo + Hello World </b> and hit enter !<br>
+       Side note for the command line:<br><br>
+       Not only is case sensitivity important, but also whitespace sensitivity. The placement of whitespace characters must be carefully observed.<br><br>
+       For this course, the "+" sign represents one whitespace.<br><br>
+       Forexampele this command should be typed in this way:<br><br>
+       <b>echo whitespace HelloWorld</b><br><br>
+       Also, to execute any command, always hit enter. From this point on, this is common knowledge and won't be mentioned again with the following commands and tasks.
+         
+      </p>
+            
+    </div>
+    <div class="par hidden">
+      <h3>Date</h3>
+      <p class="def">
+        <br><br>
+        Type the command <b> date </b> and press Enter <br><br><br>
+        What happened ?<br><br><br>
+        If you got the current date, then you did everything right<br><br>   
+      </p>
+           
+    </div>
+    
+    <div class="par hidden">
+      <h3>Change font size</h3>
+      <p class="def">
+        As we aspire to a career as an Ethical Hacker, we should also fulfil the stereotypes as a hacker.<br><br>
+        Issue the command<br><br>
+        <b>setterm -foreground green</b><br><br>
+        There, now you look like you're in a cybercrime movie.<br><br>
+        If the green is too tiring for your eyes, you can always change the colour by replacing green with the desired colour in the command.<br><br>
+        
+      </p>
+           
+    </div>
+    
+    <div class="par hidden">
+      <h3> Who am I?</h3>
+      <p>
+        <br><br>
+        Enter the command <b>whoami</b><br><br><br><br>
+        This command shows which user is currently using the system. <br><br><br><br>
+      </p>
+      
+    </div>    
+    
+    <div class="par hidden">
+      <h3> Next steps</h3>
+      <p>
+            The previous commands were mentioned to give you a better impression of the command line.<br><br>
+            Next, let's teach you the most important commands in Linux that you're most likely to need.<br><br>
+            The best thing to do is to clean up our terminal first.<br><br>
+            Just type <b>clear</b> and everything will look clean. You could also use <b>Ctrl + l </b>to clean up.<br><br>
+            But don't worry if you want to recall already written commands, you can quickly get to them by using the <b>upshift</b> and <b>downshift </b>keys without having to type everything in again.<br><br>
+            Try it out and print the current date again, without typing the command !<br>
+      </p>
+     
+    </div>
+    <div class="par hidden">
+      <h3> Linux directories</h3>
+      <p>
+        In Linux, directories play a vital role in organizing files hierarchically, while files store data or information. At the top-level is the root directory ("<b>/</b>"), serving as the starting point for the file system.<br><br>
+        The root directory contains essential system files and directories. For example, the "/bin" directory holds binary executables, <b>"/etc" </b>stores system configuration files, and <b>"/home"</b> contains user home directories.<br><br>
+        Understanding directory structure is crucial for efficient file management in Linux. In the upcoming sections, we will explore the file system, its organization, and the significance of different directories in the Linux ecosystem.<br><br>
+      </p>
+      
+    </div>
+    <div class="par hidden">
+      <h3>Navigating Through Directories</h3>
+      <p>
+        In Linux, it's important to know how to move around the system using commands. Here are three key commands for navigation:<br><br>
+        <ul>
+          <li><b>Pwd: </b>This command shows you the current directory you're in, which helps you keep track of your location in the file system.</li><br>
+          <li><b>Ls: </b>Use the "ls" command to list the files and folders in the current directory. It gives you an overview of what's inside.</li><br>
+          <li><b>Cd:</b> The "cd" command is used to change to a different directory. It allows you to move around and explore different parts of the file system.</li><br><br>
+        </ul>
+        These three commands are essential for getting around in Linux. We'll go into more detail on how to use them in the following sections.
+      </p>
+     
+     </div> 
+    <div class="par hidden">
+     <h3>pwd  (print working directory)</h3>
+     <p>
+        PWD shows you your current "location" in the Linux file system. It prints the current directory you’re in.<br><br>
+        Enter the command <b> pwd </b><br><br>
+        <b>/</b> is the root, <b> config </b> is the directory your currently in.<br><br>
+        <b>/config</b> is the directorypath, with the last directory being your current location. In this case <b>config.</b><br><br>
+        What is currently shown to you, would look in Windows like this:<br><br>
+        <img src="image.png" ><br>
+        Here you can switch between the directories by simply clicking on the desired directory.<br><br>
+        In Linux it works differently. We will show you how on the next page
+     </p>        
+    </div>
+    <div class="par hidden">
+      <h3>cd (change directory) </h3>
+      <p>
+        The <b>cd</b> command allows you to navigate between different directories by changing your current location within the file system.<br><br>
+        Here's how to use it:<br><br><br>
+       <b>cd + directory </b>=> Changes to the specified directory.<br><br>
+       <b>cd .. </b>=> Moves back to the previous directory.<br><br>
+       <b>cd /directory/directory </b>=> Changes to the directory specified in the given path.<br><br><br>
+        Let's practice using this command on the next page.
+       
+      </p>
+      
+    </div>
+    <div class="par hidden">
+      <h3>Exercise</h3>
+      <p>
+        We have determined with the <b>pwd</b> command that we are in the /config directory.<br><br>
+        Now, let's try to navigate to the / (root) directory using cd.<br><br>
+        If you're unsure how to do this, please refer back to the previous page for instructions.<br><br>
+        Afterwards, verify with pwd if you are in the / directory.<br><br>
+        If only a single / is displayed, you have done everything correctly.<br><br>
+        A small side note:<br><br>
+        Once you are in the root directory, it will also be indicated next to your username.
+      </p>
+      
+    </div>
+    <div class="par hidden">
+      <h3>Ls (list)</h3>
+      <p>
+        Now, how do we find out what contents are present in the directory?<br><br>
+        We do this using the <b>ls </b>command, the last of the 3 most important commands for navigation.<br><br>
+        Enter the <b>ls</b> command in the command line.<br><br>
+        Now you will see all the contents listed in front of you that are present in the root directory.<br><br>
+      </p>
+      
+    </div>
+    <div class="par hidden">
+      <h3>Summary</h3>
+      <p>        
+        Okay, let's summarize the 3 commands again.<br><br>
+       <ul>
+       <li><b>pwd</b> shows you the current directory you are in.</li><br>
+       <li><b>ls </b>lists all the contents of the current directory.</li><br>
+       <li>And with <b>cd + directory </b>name, you can navigate between directories, and with cd .. you can go back.</li><br><br>
+       </ul>
+        It makes sense to follow this order:<br><br><br>
+        <ul>
+        <li><b>pwd:</b> Check where you are currently</li><br>
+        <li><b>ls:</b> See where you want/can go.</li><br>
+        <li><b>cd:</b> Navigate to the desired directory.</li> <br><br>
+        </ul>
+        Let's practice this on the next page.       
+      </p>
+      
+    </div>  
+    
+    <div class="par hidden">
+    <h3>Exercise Navigation</h3>
+     <p>
+      Let's practice navigating:<br><br><br>
+      <ol type="1">
+      <li>Start at the <b>/.</b> Use <b>pwd</b> to check your current directory. </li><br>
+      <li>Use the <b>ls</b> to list all the contents of the / directory.     Take a look at the subdirectories. Navigate to the <b>usr</b> directory using <b>cd.</b></li><br>
+      <li>Verify again with pwd that you have reached the <b>/user</b> directory.</li><br>
+      <li>Execute <b>ls</b> to view the contents of the  <b>new directory.</b> Make sure that the contents have changed.</li><br>
+      <li>Now, return to the previous directory using <b>cd ..</b></li><br>
+      <li>Run <b>ls</b> again to confirm that you are back in the /</li><br>
+      </ol>
+     </p>
+     
+    </div>
+  <div class="par hidden">
+    <h3>Exercise Navigation</h3>
+     <p>
+      Let's practice navigating:<br><br><br>
+      <ol type="1">
+      <li>Start in the <b>/</b> .Verify this with pwd. </li><br>
+      <li>Use <b>ls</b> to view the contents. </li><br>
+      <li>Navigate to the directory <b>/var.</b></li><br>
+      <li>Verify again with <b>pwd</b> if you are in the correct directory.</li><br>
+      <li>Execute the <b>ls</b> command to display the contents of the <b>/var</b> directory. </li><br>
+      <li>Navigate to the directory <b>/var/log.</b> </li><br>
+      <li>Verify again with <b>pwd</b> if you are in the /var/log directory.</li><br>
+      <li>Navigate <b>directly</b> from the <b>/var/log</b> directory back to the <b>/.</b>  (Hint: Use <b>cd /</b> and see what happens ;))</li><br>
+      <li>Verify with <b>pwd</b> if you have returned to the root directory.</li><br>
+      </ol>
+     </p>
+     
+  </div>
+  <div class="par hidden">
+   <h3>Exercise Navigation</h3>
+   <p>
+    Let's practice navigating:<br><br><br>
+    <ol type="1">
+    <li>Start in the root directory <b>/</b> and verify this with <b>pwd.</b></li><br>
+    <li>Use <b>ls</b> to view the contents. </li><br>
+    <li>Navigate directly to the <b>/var/log</b> directory using the <b>cd/var/log</b></li><br>
+    <li>Verify with <b>pwd</b> if you are in the <b>/var/log directory.</b></li><br>
+    </ol><br>
+    Remember, the goal is to reach the <b>/var/log</b> directory using only<b>one</b> instance of the cd command.
+   </p>
+ 
+  </div>
+  <div  class="par hidden">
+    <h3>Help me!!!</h3>
+    <p>
+     If you encounter difficulties with a command or want to understand its functionality better, you can utilize the command:<br><br><br>
+     <b>command --help</b><br><br><br>
+     By using this command, you can access helpful information about the command's usage, options, and additional functionalities.<br><br><br>
+     Let's practice using the help command on the next page.<br><br><br>
+    </p>
+   
+  </div>
+  <div class="par hidden">
+   <p>
+    Here are some keyboard shortcuts that can be helpful:<br><br>
+    <b>Ctrl + l:</b> Similar to the <b>clear</b> command, but faster.<br><br>
+    <b>Tab:</b> When entering a command, you can use the Tab key to auto-complete directory names. If you type the initial letters of a directory, it will only auto-complete the ones that match those letters. This allows you to work more efficiently.<br><br>
+    Give it a try!<br><br>
+    Navigate to the <b>/home</b> directory. Use ls to list its contents. There is a directory named <b>President_of_UR.</b> It can be tedious to type out the entire directory name each time.<br><br>
+    To save time, enter <b>cd</b>  and then press the <b>Tab key</b>  until the President's directory is displayed. You can also try entering <b>cd P </b> and then pressing the Tab key to auto-complete the directory name.
+   </p>
+   
+  </div>
+ <div class="par hidden">
+  <h3>Exercise</h3>
+  <p>
+    Try using the help command with ls.<br><br><br>
+    Navigate to the / directory and use the <b>ls</b> command.<br><br><br> 
+    Now use <b>ls</b> with the <b>help</b> command and find:<br><br><br> 
+    <lo type="1">
+    <li>- How to display the contents as <b>a list</b></li><br> 
+    <li>- How to sort the contents <b>alphabetically</b></li><br> 
+    </lo> 
+  </p>
+  
+ </div>
+ <div class="par hidden">
+  <h3>Next Steps</h3>
+  <p>
+    We have now learned the basics of the command line and are able to navigate through the Linux filesystem. We have also learned useful keyboard shortcuts that will hopefully make working with Linux faster and more enjoyable.<br><br> 
+    To navigate through the system, we have learned the commands pwd, ls, and cd, and have practiced using them.<br><br> 
+    Next, we will teach you additional important commands that are essential for working with Linux.<br><br> 
+    While some of these commands may not always be ethical, understanding our enemy requires us to think and act like them.<br><br> 
+  </p>
+  
+ </div>
+ <div class="par hidden">
+  <h3>Exercise</h3>
+  <p>
+    Now that we have learned the basics, let's be a little bit sneaky and steal some information.<br><br> 
+    Navigate to the <b>/home</b> directory. The President has created his directory there. Enter that directory. Inside, you should find a file that contains interesting information for students.<br><br> 
+    What is the name of this file? Enter the name in the text field below.<br><br> 
+    (File name: finalExam.zip) 
+  </p>
+ 
+ </div>
+
+ 
+  <div class="par hidden">
+    <h3>Cat</h3>
+     <p>
+      This file contains very interesting content for us as students, so let's open it.<br><br>
+      The default command to open files is the <b>cat</b>command.<br><br>
+      Let's give it a try. Open the file by typing cat + filename<br><br>
+      What is displayed?<br><br>
+      It doesn't seem to make much sense and doesn't look like exam questions.<br><br>
+      That's because we have a zip file here. In order to open it with cat, we first need to unzip the file.<br><br>
+     </p>
+    
+  </div>
+  <div class="par hidden">
+  <h3>Unzip </h3>
+   <p>
+    The very important test questions are stored in a zip file.<br><br>
+    Files in this format can be opened with the <b> unzip</b>  command.<br><br>
+    Enter the command <b>unzip + filename </b><br><br>
+    Hm ok, as you can see the file is encrypted and we need a password to open it. <br><br>
+    Press <b>Ctrl + C </b> to finish the command and let's check again in the president's directory if he has stored his passwords somewhere.<br><br>
+    What is the name of this file? Enter the name in the text field below.<br><br>
+   </p>
+   
+   </div>
+   <div class="par hidden">
+   <h3>Secret Info </h3>
+   <p>
+    Let's take a look in the President's directory to see if there's a secret directory or file.<br><br>
+    When you use the <b>ls</b> command, only the finalsExam.zip file is displayed.<br><br>
+    Do you remember the <b>ls --help</b> exercise?<br><br>
+    Enter the <b>ls --help</b> command again and see if there is a combination that displays <b>ALL</b> directories.<br><br>
+   </p>
+   
+  </div>
+  <div class="par hidden">
+    <h3>Hidden Directories</h3>
+    <p>
+      The command we're looking for is <b>ls -a.</b> Now you should see some files, some dots, and a <b>.Secret</b> directory listed.<br><br>
+      Open it, paying attention to the correct directory input. (Hint: don’t forget the dot)<br><br>
+      Once you're inside the directory, use <b>ls</b> to view its contents again.<br><br>
+      Now, you should find a file where the President has hidden his secret information.<br><br>
+      What is its name? Enter it in the text field below.<br><br>
+      Text field: secretInformation
+    </p>
+   
+  </div>
+  <div class="par hidden">
+    <h3>Cat </h3>
+     <p class="exercise">
+      Now we can effectively use the cat command.</b><br><br>
+      Type <b>cat + filename</b> display the contents of the file.</b><br><br>
+      Search for the password for the finalsExams file.</b><br><br>
+      What is the password? Enter the password in the text field below.</b><br><br>
+      <input id="question1" >
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>exercise</h3>
+     <p class=>
+      Now we have the password to open the file finalExams.zip.</b><br><br>
+      Go to the corresponding directory and open the file with the learned unzip command and enter the password.</b><br><br>
+      Now everything should work, right?</b><br><br>
+      Nevertheless, the error message <b>"permission denied"</b>appears.</b><br><br>
+      What is the reason for this?</b><br><br>
+      
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Sudo</h3>
+     <p >
+      It appears that we have encountered the <b>"permission denied" </b>error. <br><br>
+      To resolve this issue, we can utilize the mighty superhero of Linux commands: <b>sudo</b><br><br>
+      <b>sudo </b>stands for <b>Superuser Do </b>, and it grants temporary administrative privileges, allowing you to perform actions typically reserved for the root user.<br><br>
+      When faced with the "permission denied" error, simply prepend your original command with <b>sudo</b> to elevate your privileges and execute the command successfully.<br><br>
+      
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Exercise</h3>
+     <p >
+      Now that we have all the necessary commands and information, it's time to crack the President's final exam.<br><br><br>
+      So, let's get to it. Combine your newly acquired knowledge with the obtained password.<br><br><br>
+      If you encounter any difficulties along the way, feel free to refer back to the relevant slides.<br><br><br>
+      
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Find</h3>
+     <p >
+      After extracting the finalExams.zip file, the entire directory structure was recreated within the President's directory.<br>
+      This includes a home directory. By navigating through this path, you can find the unzipped file, which can be opened using the cat command.<br><br>
+      Additionally, there is a more efficient way to locate files than manual searching.<br><br>
+      The find command is specifically designed for this purpose. It allows you to search for files and directories based on various criteria such as name, size, type, and modification time. We will explain how to use this command on the next page.
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Find</h3>
+     <p >
+    
+      The <b>find</b> command works as follows:<br>
+      <b>find + directory + -name + filename</b><br><br>
+      <ul>
+        <li><b>Directory:</b> Specify the directory where you want to search. If you specify "/", the entire system will be searched.</li><br><br>
+        <li><b>-name:</b> Modify the search criteria. For example, you can search by size, type, or other attributes.</li><br><br>
+        <li><b>Filename:</b> Enter the name of the file you want to search for.</li><br><br>
+      </ul>
+      To locate the <b>finalExams </b> file, adjust the command with the appropriate directory and filename.<br><br><br>
+      It is recommended to use <b>sudo </b>from the beginning to ensure necessary privileges.<br><br><br>
+    </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Find</h3>
+     <p >
+    
+      The <b>find</b> command works as follows:
+      <b>find + directory + -name + filename</b>
+      <ul>
+        <li><b>Directory:</b> Specify the directory where you want to search. If you specify "/", the entire system will be searched.</li>
+        <li><b>-name:</b> Modify the search criteria. For example, you can search by size, type, or other attributes.</li>
+        <li><b>Filename:</b> Enter the name of the file you want to search for.</li>
+      </ul>
+      To locate the <b>finalExams </b> file, adjust the command with the appropriate directory and filename.
+      It is recommended to use <b>sudo </b>from the beginning to ensure necessary privileges.
+    </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Mkdir</h3>
+     <p >
+      Having successfully accessed the finalExam file, we now need to store it securely.<br><br><br>
+      To ensure proper organization, it is recommended to create a dedicated directory. You can do this using the following command:<br><br><br>
+      <b>mkdir + directoryName</b><br><br>
+      Navigate to the /home directory and create a new directory using your last name.<br><br><br>
+      Don’t forget to use <b>sudo !!</b>
+    </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>mv (move)</h3>
+     <p >
+      
+      Now that we have successfully created our own directory, let's move the unzipped final exam file there.<br><br>
+      We can do this using the <b>mv </b>command, which is used as follows:<br><br>
+      <b> mv + filename + directory </b><br><br>
+      Don't forget to include <b>sudo </b>at the beginning of the command to ensure necessary privileges.<br><br>
+      You can specify the path of the directory where you want to move the file.<br><br>
+      So, in our case, provide the <b>path to your created directory.</b> 
+    </p>
+    
+  </div>
+  <div class="par hidden">
+    <h3>Whiping our tracks </h3>
+     <p >
+      Now we face the problem that when the President logs in, he will see that the finalExams.zip file has been unzipped.
+      So let's cover our tracks by deleting the created directory during the unzipping process. You can do this using the following commands:<br><br><br>
+      <b>rm + filename </b>=> removes files<br><br>
+      <b>rmdir + directoryname</b> => removes directories<br><br>
+      Don't forget to use <b>sudo!</b><br><br>
+      Go to the created directory, delete the finalExams file first, and then remove the subdirectories..<br><br>
+      If you've done everything correctly, the President's directory should appear untouched.<br><br>
+    </p>
+     
+  </div>
+  
+  <div class="par hidden">
+    <h3> Congratulations!!! </h3>
+     <p >
+      You have successfully completed the introductory course. You have learned the essential commands and can now navigate through the system with confidence. Additionally, you have gained access to some unauthorized information. Maybe that wasn’t so ethical...<br><br>
+      But as they say, to defeat your enemy, you must know them.<br><br>
+      One last command: Type the history command.<br><br>
+      Now you can see all the commands that you learned today and what you accomplished !
+      If you're still interested in learning a few more commands, feel free to continue. Otherwise, you can now exit the course.
+    </p>
+  
+  </div>
+  <div class="par hidden">
+    <h3>  </h3>
+     <p >
+      If you haven't had enough of Linux yet, let's teach you a few more commands.<br><br><br><br>
+      Go to the next page.
+      
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Sort</h3>
+     <p >
+      Let's go back to the secret information file. Previously, you had to search for the password and go through each line individually until you found it.<br><br>
+      With the sort command, you can easily sort the file. The command works as follows:<br><br>
+      <b>sort + NameOfFile</b><br><br>
+      Try it with the secretInformation file. As you can see, the sort command also fulfills the function of the cat command.<br><br>
+      Now, searching for the password should be much faster and easier.<br><br>
+      But there's an even faster way.      
+     </p>
+     
+  </div>
+  <div class="par hidden">
+    <h3>Grep</h3>
+     <p >
+      With the grep command, you can search for specific words.<br><br><br>
+      <b>grep + "searchtext" + file</b> <br><br><br>
+      Search for the keyword ”Password" in the secretInformation file.<br><br><br>
+      Now, you will only be shown the passwords in the file. 
+            
+     </p>
+     
+  </div>
+  <div class="learning">
+    <div class="btnContainer">
+      <button class="back" id="back">Back</button>
+      <button class="next" id="next">Next</button>
+    </div>
+     
+    
+    
+  </body>
+</html>

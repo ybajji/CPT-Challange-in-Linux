@@ -1,0 +1,69 @@
+body {
+  background: linear-gradient(90deg, rgb(78, 78, 80) 0%, rgb(20, 20, 20) 35%, rgb(3, 3, 3) 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: oblique;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6%;
+  padding: 20px 10.5%;
+  margin-bottom: 2%;
+  background-color: #403435;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 4px solid;
+  border-image-source: linear-gradient(to right, #032352 0%, #080808 9%, #adb310 7%, #abd200 15%, #3634bb 17%, #091301 23%, #81ad6c 23%, #1800ec 31%, #121213 31%, #0f0702 38%, #b3c419 39%, #e2c523 46%, #030303 46%, #3a3885 54%, #4fb800 54%, #4fb800 62%, #009b77 62%, #009b77 57%, #008993 55%, #6a7879 57%, #251a8d 57%, #cab924 85%, #0ed328 85%, #00556a 72%, #033e52 82%, #000507 100%);
+  border-image-slice: 1;
+}
+
+h1 {
+  margin-left: 0;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #ebeae7;
+  font-size: 0.8cm;
+  font-style: oblique;
+}
+#main_div{
+  width: 100%; 
+  margin: auto;
+  padding: 2rem; 
+  margin-top: 10rem;
+  text-align: center;}
+#div-create-session{
+  background: rgba(69, 69, 70, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+#create-session{
+  background: green;
+  color: #ffffff 
+}
+#close-all-sessions{ 
+  background: #ed5565;
+  color: #ffffff 
+  } 
+.infos td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #dddfdf;
+    color: rgb(10, 10, 10);
+} 
+
