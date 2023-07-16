@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./webtop/create_session.sh:/app/create_session.sh
+      - ./sessions:/learn-linux/sessions
+      - ./President_of_UR:/learn-linux/President_of_UR
+      - /var/run/docker.sock:/var/run/docker.sock
