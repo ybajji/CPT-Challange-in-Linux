@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#echo "Executing create_session.sh"
-
 # Validate session ID argument
 if [ -z "$1" ]; then
   #"Error: No session ID provided."
@@ -30,6 +28,17 @@ done
 
 # COPY THE President_of_UR FOLDER TO THE CONTAINER
 docker cp President_of_UR "$container_id:/home"
+
+# INSTALL UNZIP INSIDE THE CONTAINER
+docker exec "$container_id" apk add unzip > /dev/null 2>&1
+exit_code=$?
+
+# Block until the docker exec command is completed
+while [ $exit_code -ne 0 ]; do
+  docker exec "$container_id" apk add unzip > /dev/null 2>&1
+  exit_code=$?
+  sleep 1
+done
 
 # RETURN THE SESSION ID AND PORT
 echo "$session_id $PORT"
