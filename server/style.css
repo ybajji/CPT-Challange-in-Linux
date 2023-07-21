@@ -293,6 +293,10 @@ input {
     background: #0f77d1; 
     color: #ffffff
   }
+  img{
+    width: 400px;
+    height: 100px;
+  }
   
   
  

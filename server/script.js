@@ -38,7 +38,7 @@ nextButton.addEventListener('click', function () {
       }
     }
     if(currentDiv==divFinale){
-      alert("the the lesson is over")
+      alert("Congratulations!!!")
     }
       else {
       currentDiv.classList.remove('show');

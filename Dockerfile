@@ -15,8 +15,6 @@ COPY package*.json ./
 RUN npm install cookie-parser
 RUN npm install express-session
 
-
-
 COPY . .
 
 RUN chmod +x ./webtop/create_session.sh
