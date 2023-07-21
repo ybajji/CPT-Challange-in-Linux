@@ -4,4 +4,4 @@ rm -rf sessions && mkdir sessions && docker-compose build && docker-compose up
 # Login
 username: admin 
 password :1234567  
-es ist empfohlen , dass du den username und passwort ändert  in app.js
+it is recommended that you change the username and password in app.js
