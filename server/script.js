@@ -2,6 +2,7 @@ var divs = document.querySelectorAll('.par');
 var condition = document.querySelectorAll('.exercice')
 
 const webtopIframe = document.getElementById("webtop-iframe");
+const divFinale = document.getElementById("final");
 
 
 const joinSessionForm = document.getElementById("join-session-form");
@@ -35,7 +36,11 @@ nextButton.addEventListener('click', function () {
         alert('Falsche Antwort');
         return; // Stoppe die Ausführung, um das nächste div nicht anzuzeigen
       }
-    } else {
+    }
+    if(currentDiv==divFinale){
+      alert("the the lesson is over")
+    }
+      else {
       currentDiv.classList.remove('show');
       nextDiv.classList.remove('hidden');
       currentDiv.classList.add('hidden');
